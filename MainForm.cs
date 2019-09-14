@@ -33,7 +33,7 @@ namespace Registro
             consultaFormulario.MdiParent = this;
             consultaFormulario.Show();
         }
-
+        
         private void EstudiantesToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             InscripcionForm inscripcionFormulario = new InscripcionForm();
