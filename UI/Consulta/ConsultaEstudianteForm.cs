@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Registro.UI.Consulta
 {
-    public partial class ConsultaForm : Form
+    public partial class ConsultaEstudianteForm : Form
     {
-        public ConsultaForm()
+        public ConsultaEstudianteForm()
         {
             InitializeComponent();
         }
@@ -60,5 +60,9 @@ namespace Registro.UI.Consulta
             ConsultaDataGridView.DataSource = listado;
         }
 
+        private void ConsultaEstudianteForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Registro.UI.Consulta
 {
-    partial class ConsultaForm
+    partial class ConsultaEstudianteForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace Registro.UI.Consulta
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaEstudianteForm));
             this.ConsultaDataGridView = new System.Windows.Forms.DataGridView();
             this.DesdeLabel = new System.Windows.Forms.Label();
             this.DesdeDateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -153,7 +153,7 @@ namespace Registro.UI.Consulta
             this.ConsultaButton.UseVisualStyleBackColor = true;
             this.ConsultaButton.Click += new System.EventHandler(this.ConsultaButton_Click);
             // 
-            // ConsultaForm
+            // ConsultaEstudianteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -168,8 +168,9 @@ namespace Registro.UI.Consulta
             this.Controls.Add(this.DesdeDateTimePicker);
             this.Controls.Add(this.DesdeLabel);
             this.Controls.Add(this.ConsultaDataGridView);
-            this.Name = "ConsultaForm";
-            this.Text = "ConsultaForm";
+            this.Name = "ConsultaEstudianteForm";
+            this.Text = "Consulta";
+            this.Load += new System.EventHandler(this.ConsultaEstudianteForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ConsultaDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -188,7 +189,5 @@ namespace Registro.UI.Consulta
         private System.Windows.Forms.TextBox CriterioTextBox;
         private System.Windows.Forms.Label CriterioLabel;
         private System.Windows.Forms.Button ConsultaButton;
-        private DataGridViewCellEventHandler DataGridView1_CellContentClick;
-        private readonly EventHandler FiltroComboBox_SelectedIndexChanged;
     }
 }

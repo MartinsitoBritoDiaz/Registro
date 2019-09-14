@@ -224,8 +224,10 @@
             this.BalanceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.BalanceTextBox.Location = new System.Drawing.Point(234, 489);
             this.BalanceTextBox.Name = "BalanceTextBox";
+            this.BalanceTextBox.ReadOnly = true;
             this.BalanceTextBox.Size = new System.Drawing.Size(524, 28);
             this.BalanceTextBox.TabIndex = 22;
+            this.BalanceTextBox.TextChanged += new System.EventHandler(this.BalanceTextBox_TextChanged);
             // 
             // NuevoButton
             // 
@@ -280,6 +282,7 @@
             this.SexoComboBox.Name = "SexoComboBox";
             this.SexoComboBox.Size = new System.Drawing.Size(524, 28);
             this.SexoComboBox.TabIndex = 26;
+            this.SexoComboBox.SelectedIndexChanged += new System.EventHandler(this.SexoComboBox_SelectedIndexChanged);
             // 
             // CedulaMaskedTextBox
             // 
@@ -361,7 +364,7 @@
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.IdLabel);
             this.Name = "RegistroForm";
-            this.Text = "RegistroForm";
+            this.Text = "Registro";
             this.Load += new System.EventHandler(this.RegistroForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();

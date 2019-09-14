@@ -7,6 +7,7 @@ using Registro.Entidades;
 using Registro.DAL;
 using System.Data.Entity;
 using System.Linq.Expressions;
+using System.Windows.Forms;
 
 namespace Registro.BLL
 {
@@ -14,9 +15,11 @@ namespace Registro.BLL
     {
         public static bool Guardar(Estudiantes estudiante)
         {
+            Inscripciones inscripcion = new Inscripciones();
             bool paso = false;
-
             Contexto db = new Contexto();
+
+            Console.WriteLine(estudiante.Balance);
             try
             {
                 if (db.Estudiante.Add(estudiante) != null)
@@ -55,6 +58,35 @@ namespace Registro.BLL
             return paso;
         }
 
+        public static bool GuardarBalance(int id, decimal balance)
+        {
+            bool paso = false;
+            Contexto db = new Contexto();
+            Estudiantes estudiante = new Estudiantes();
+
+            estudiante = db.Estudiante.Find(id);
+            if(estudiante != null)
+            {
+                try
+                {
+                    estudiante.Balance += balance;
+
+                    db.Entry(estudiante).State = EntityState.Modified;
+                    paso = (db.SaveChanges() > 0);
+                }
+                catch
+                {
+                    throw;
+                }
+                finally
+                {
+                    db.Dispose();
+
+                }
+            }
+
+            return paso;
+        }
         public static bool Eliminar(int id)
         {
             bool paso = false;

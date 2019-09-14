@@ -14,4 +14,6 @@ C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Tareas\Registro\Registr
 C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Tareas\Registro\Registro\obj\Debug\Registro.pdb
 C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Tareas\Registro\Registro\obj\Debug\Registro.MainForm.resources
 C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Tareas\Registro\Registro\obj\Debug\Registro.UI.Registro.RegistroForm.resources
-C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Tareas\Registro\Registro\obj\Debug\Registro.UI.Consulta.ConsultaForm.resources
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Tareas\Registro\Registro\obj\Debug\Registro.UI.Inscripcion.InscripcionForm.resources
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Tareas\Registro\Registro\obj\Debug\Registro.UI.Consulta.ConsultaEstudianteForm.resources
+C:\Users\Martinsito\Desktop\UCNE\Programacion Aplicada 1\Tareas\Registro\Registro\obj\Debug\Registro.UI.Consulta.ConsultaInscripcionForm.resources

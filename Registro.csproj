@@ -54,8 +54,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\EstudiantesBLL.cs" />
+    <Compile Include="BLL\InscripcionesBLL.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\Estudiantes.cs" />
+    <Compile Include="Entidades\Inscripciones.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,11 +66,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\Consulta\ConsultaForm.cs">
+    <Compile Include="UI\Consulta\ConsultaEstudianteForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Consulta\ConsultaForm.Designer.cs">
-      <DependentUpon>ConsultaForm.cs</DependentUpon>
+    <Compile Include="UI\Consulta\ConsultaEstudianteForm.Designer.cs">
+      <DependentUpon>ConsultaEstudianteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Consulta\ConsultaInscripcionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consulta\ConsultaInscripcionForm.Designer.cs">
+      <DependentUpon>ConsultaInscripcionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Inscripcion\InscripcionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Inscripcion\InscripcionForm.Designer.cs">
+      <DependentUpon>InscripcionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Registro\RegistroForm.cs">
       <SubType>Form</SubType>
@@ -88,8 +102,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UI\Consulta\ConsultaForm.resx">
-      <DependentUpon>ConsultaForm.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Consulta\ConsultaEstudianteForm.resx">
+      <DependentUpon>ConsultaEstudianteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Consulta\ConsultaInscripcionForm.resx">
+      <DependentUpon>ConsultaInscripcionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Inscripcion\InscripcionForm.resx">
+      <DependentUpon>InscripcionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registro\RegistroForm.resx">
       <DependentUpon>RegistroForm.cs</DependentUpon>

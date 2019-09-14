@@ -57,8 +57,7 @@ namespace Registro.UI.Registro
             estudiante.Celular = CelularMaskedTextBox.Text;
             estudiante.Email = EmailTextBox.Text;
             estudiante.FechaNacimiento = FechaNacimientoDateTimePicker.Value;
-            estudiante.Sexo = SexoComboBox.SelectedIndex;  
-            estudiante.Balance = Convert.ToDecimal(BalanceTextBox.Text);
+            estudiante.Sexo = SexoComboBox.SelectedIndex;
 
             return estudiante;
         }
@@ -169,6 +168,7 @@ namespace Registro.UI.Registro
                 paso = false;
             }
 
+
             return paso;
         }
 
@@ -206,6 +206,16 @@ namespace Registro.UI.Registro
                 MessageBox.Show("Eliminado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 MyErrorProvider.SetError(IdNumericUpDown, "No se puede eliminar una persona que no existe");
+        }
+
+        private void SexoComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BalanceTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

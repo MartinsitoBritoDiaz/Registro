@@ -121,6 +121,43 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="estudiantesToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAeAB4AAD/4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD/2wBD
+        AAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0M
+        DgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM
+        DAwMDAwMDAwMDAwMDAz/wAARCAAPAA8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQF
+        BgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAk
+        M2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWG
+        h4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx
+        8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQA
+        AQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5
+        OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmq
+        srO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9
+        GPi74OtLPU9S1qWHxt8RNQ1TV5rHT7PS9Mty5kM8jKpuLqS5ZYY41dRlQAVHCE7a6L9nTwRpMnxE8MX2
+        ka5rHh271GGUXOhXlgm5LhLd/OsZ57OWFJGjZjIhZCjiFihYqxXyX4vTfEj4e39k3irw7b6HJ4wuppId
+        PaW2uoUjgXMkR2yyBkkW4dWLksVdwNokZRufALxP8YNflg8WeE/C1r4v/sS4m0SeG5uLW3WWZEDNOxea
+        MiRvPZiV+VmZmZd8jMudPwdy2jWWeQhSU07qftNeazfxXs7/AAtN26Wsea/ET2kP7LcKl+q5JX5XZJOP
+        RL4k1G+t23ol/9k=
+</value>
+  </data>
+  <data name="inscripcionesToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
+        dAAAEnQB3mYfeAAAAqxJREFUSEvFlFtIk2EYx7+MuugiiC667aqboKQgiC4qsVoHCrKDFxEUISYEdsA8
+        ZMKwmeahDVtObE6/FjKFlXPYPLeDm87MY8tZyfJw0xK0dArWv/d9/BRHZnMX+YcfPO/7Pvx4eb6DgGWS
+        V+WGcCAbwuE8CFEhwHsZ1/ItkgFYVixEyqVqdYmQKTE44qc6SDzxY5pYJ1PRuqy+H3K9C+OT00jUtBBp
+        OsciKVo7cgzt1MuzK15Em2eM6iDx9+kAIRxT0rq8rh+KFy7Mzc3htuYNkVHWusi9UgceGdzUy7Mzrhzu
+        gbUUi43vkVRiw61iK9LLnX+QysaRUxmGuMrmZTNuQzKbZYqWz9SBDNHFcCLb0AFFhRtPqruolydkcbG5
+        G3dLrFQvZHDkG4bGxhGvbECiuhlysVU6WYW4ouUD1DXzN9p3Q0/suKrD5FQASmMnnrIzsaGfznlCFvPY
+        e4cRlVTJqp9EQmEjvMN+xGaZcSXPgjuaZurjCVk8FZiBsOcB3aq5y0eYXB/Z/ix0dX3QN3lgtHupl2ct
+        xfNf3vbLWmw8pcaWGA2E/VkEz5kMI85n1iBGbkK8qoH2eP4p3ny2CM9qeyBEK7HptBr3dTZoX/cSPCan
+        FzXs5tXOQdS//Ux7PH8V86fN2XpOjfUnCiEcUbGn34HIhOdSB/8f6HE09SVkaa8QnWzEpexa6WQF8VQg
+        QHR6R9lvMBexCjM1Lw2faxWbK8dgG4C5/ZN0Auy+LsLlGaU6SBxXYCF4tl3UIL3UCp2lm9YzM7PEwmsX
+        zC9COJiLUf8Eq5eIPT4/NpxUEfymYl0XrN1DEA7lslnnrwwTctJKbZLtf4gjZI+lCnD0DbMZP5RW4YXE
+        A1++QtjL3tOoAuJCpglN73zUEG4Wb6yz9CDiuIq4WdQi7YYb4Dc7rz6orBqiGQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="estudiantesToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAeAB4AAD/4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD/2wBD
@@ -141,7 +178,7 @@
         RL4k1G+t23ol/9k=
 </value>
   </data>
-  <data name="estudiantesToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="estudiantesToolStripMenuItem2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAeAB4AAD/4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD/2wBD
         AAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0M
