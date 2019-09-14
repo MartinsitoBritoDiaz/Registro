@@ -44,7 +44,7 @@ namespace Registro.UI.Consulta
             {
                 listado = InscripcionesBLL.GetList(p => true);
             }
-
+            
             ConsultaDataGridView.DataSource = null;
             ConsultaDataGridView.DataSource = listado;
         }
