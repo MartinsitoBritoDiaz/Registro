@@ -36,9 +36,6 @@ namespace Registro
         
         private void EstudiantesToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            InscripcionForm inscripcionFormulario = new InscripcionForm();
-            inscripcionFormulario.MdiParent = this;
-            inscripcionFormulario.Show();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -51,6 +48,14 @@ namespace Registro
             ConsultaInscripcionForm consultaInscripcionForm = new ConsultaInscripcionForm();
             consultaInscripcionForm.MdiParent = this;
             consultaInscripcionForm.Show();
+        }
+
+        private void InscripcionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+            InscripcionForm inscripcionFormulario = new InscripcionForm();
+            inscripcionFormulario.MdiParent = this;
+            inscripcionFormulario.Show();
         }
     }
 }
