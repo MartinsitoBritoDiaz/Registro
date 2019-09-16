@@ -22,10 +22,11 @@ namespace Registro.BLL
                 EstudiantesBLL.GuardarBalance(inscripcion.EstudianteId, (-1 * inscripcion.Deposito));
                 inscripcion.Balance -= inscripcion.Deposito;
             }
-
-            EstudiantesBLL.GuardarBalance(inscripcion.EstudianteId, (inscripcion.Monto - inscripcion.Deposito));
-            inscripcion.Balance = (inscripcion.Monto - inscripcion.Deposito);
-   
+            else
+            {
+                EstudiantesBLL.GuardarBalance(inscripcion.EstudianteId, (inscripcion.Monto - inscripcion.Deposito));
+                inscripcion.Balance = (inscripcion.Monto - inscripcion.Deposito);
+            }
             try
             {
                 if (db.Inscripcion.Add(inscripcion) != null)
