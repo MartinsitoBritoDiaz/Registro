@@ -42,31 +42,14 @@ namespace Registro.UI.Inscripcion
 
         private Inscripciones LlenaClase()
         {
-            decimal monto;
-            decimal deposito;
-
             Inscripciones inscripcion = new Inscripciones();
             inscripcion.InscripcionId = Convert.ToInt32(InscripcionIdNumericUpDown.Value);
             inscripcion.EstudianteId = Convert.ToInt32(EstudianteIdNumericUpDown.Value);
             inscripcion.Fecha = FechaDateTimePicker.Value;
             inscripcion.Monto = Convert.ToDecimal(MontoTextBox.Text);
             inscripcion.Deposito = Convert.ToDecimal(DepositoTextBox.Text);
-            monto = Convert.ToDecimal(MontoTextBox.Text);
-            deposito = Convert.ToDecimal(DepositoTextBox.Text);
-
+            inscripcion.Balance = Convert.ToDecimal(BalanceTextBox.Text);
             inscripcion.Comentario = ComentariosRichTextBox.Text;
-
-            if (Convert.ToDecimal(BalanceTextBox.Text + "0") > 0)
-            {
-                EstudiantesBLL.GuardarBalance(Convert.ToInt32(EstudianteIdNumericUpDown.Value), (-1 * deposito));
-                inscripcion.Balance = (Convert.ToDecimal(BalanceTextBox.Text) - deposito);
-            }
-            else
-            {
-                EstudiantesBLL.GuardarBalance(Convert.ToInt32(EstudianteIdNumericUpDown.Value), (monto - deposito));
-                inscripcion.Balance = (monto - deposito);
-            }
-
             return inscripcion;
         }
 
@@ -91,35 +74,27 @@ namespace Registro.UI.Inscripcion
 
             inscripcion = LlenaClase();
 
-            if(EstudiantesBLL.Buscar(inscripcion.EstudianteId) != null)
-            {
                 if (InscripcionIdNumericUpDown.Value == 0)
-                    paso = InscripcionesBLL.Guardar(inscripcion);
-                else
+                paso = InscripcionesBLL.Guardar(inscripcion);
+            else
+            {
+                if (!ExisteEnLaBaseDeDatos())
                 {
-                    if (!ExisteEnLaBaseDeDatos())
-                    {
-                        MessageBox.Show("No se puede modificar una inscripcion que no existe", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-                    paso = InscripcionesBLL.Modificar(inscripcion);
+                    MessageBox.Show("No se puede modificar una inscripcion que no existe", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
+                paso = InscripcionesBLL.Modificar(inscripcion);
+            }
 
-                if (paso)
-                {
-                    Limpiar();
-                    MessageBox.Show("Guardado!!", " Exito ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("No fue posible guardar !!", " Fallo ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            if (paso)
+            {
+                Limpiar();
+                MessageBox.Show("Guardado!!", " Exito ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("No fue posible guardar el estudiante no existe", " Fallo ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            
+                MessageBox.Show("No fue posible guardar !!", " Fallo ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }            
         }
 
         private bool ExisteEnLaBaseDeDatos()

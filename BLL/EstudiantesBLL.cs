@@ -10,7 +10,7 @@ using System.Linq.Expressions;
 using System.Windows.Forms;
 
 namespace Registro.BLL
-{
+{ 
     public class EstudiantesBLL
     {
         public static bool Guardar(Estudiantes estudiante)
